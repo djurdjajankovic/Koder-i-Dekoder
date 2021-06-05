@@ -48,7 +48,7 @@ void pomeriUDesno(int **p, int n)
         }
     }
 }
-void brajovoPismo(char s[], int **p, int n)
+void brajevoPismo(char s[], int **p, int n)
 {
     for(int i=0;i<n;i++)
     {
@@ -133,15 +133,7 @@ int main()
     oduzmi(d,n);
     dekadniUBinarni(p,d,n);
     pomeriUDesno(p,n);
-    for(int i =0; i<n;i++)
-    {
-        for(int j=0;j<6;j++)
-        {
-            printf("%d ",p[j][i]);
-        }
-        printf("\n");
-    }
-    brajovoPismo(s,p,n);
+    brajevoPismo(s,p,n);
     printf("%s",s);
     
     return 0;
