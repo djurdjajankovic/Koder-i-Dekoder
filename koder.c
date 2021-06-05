@@ -5,7 +5,7 @@ Koder
 #include <string.h>
 #include <stdlib.h>
 
-void brajovoPismo(char s[], int **p, int n)
+void brajevoPismo(char s[], int **p, int n)
 {
     for(int i=0;i<n;i++)
     {
@@ -696,7 +696,7 @@ int **p=(int **)malloc(6*sizeof(int*));
     for ( int i = 0; i < 6; i ++)
         p[i] = (int *)calloc( n, sizeof(int));
 int d[n];
-brajovoPismo(s,p,n);
+brajevoPismo(s,p,n);
 pomeriULevo(p,n);
 sveUDekadni(d,p,n);
 dodaj(d,n);
